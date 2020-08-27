@@ -1,2 +1,40 @@
+#默认环境
+server:
+   port: 8080
+spring:
+  profiles:
+    active: prod
+---
+#开发环境
+server:
+  port: 8081
+spring:
+  profiles: dev
+---
+#部署环境dep
 server:
   port: 8082
+spring:
+  profiles: dep
+---
+#生产环境prod
+server:
+  port: 80
+spring:
+  profiles: prod
+
+
+#active可以指定环境
+#spring:
+#  profiles:
+#    active:
+#person:
+#  last-name: "江帆1"
+#  age: 23
+#  isBoss: true
+#  birth: 1990/12/03
+#  map: {"key1": "value1","key2": "value2"}
+#  lists: [1,2,3,4,5,6]
+#  dog:
+#    id: 1
+#    name: "泰迪"
